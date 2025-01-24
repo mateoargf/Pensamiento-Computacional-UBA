@@ -35,14 +35,20 @@ print(f'El día de la semana es: {dia_semana}')
 print(f'El día del mes es: {str(dia_mes)}')
 
 # queremos calcular la edad del hermano mayor
-nombre_menor = input('quién es el hermano menor? ')
+# nombre_menor = input('quién es el hermano menor? ')
 # casteamos el valor ingresado en int para poder operar
-edad_menor = int(input(f'Ingrese la edad de {nombre_menor} ')) 
-nombre_mayor = input(f'Cómo se llama el hermano mayor de {nombre_menor}? ')
+# edad_menor = int(input(f'Ingrese la edad de {nombre_menor} ')) 
+# nombre_mayor = input(f'Cómo se llama el hermano mayor de {nombre_menor}? ')
 # otro casteo para transformar el objeto tipo str en int
-difer = int(input(f'Cúantos años más tiene de diferencia {nombre_mayor}? '))
+# difer = int(input(f'Cúantos años más tiene de diferencia {nombre_mayor}? '))
 # acá operamos los datos casteados
-edad_mayor = edad_menor + difer
-print(f'{nombre_menor} tiene: {edad_menor} años')
-print(f'{nombre_mayor} tiene: {edad_mayor} años')
+# edad_mayor = edad_menor + difer
+# print(f'{nombre_menor} tiene: {edad_menor} años')
+# print(f'{nombre_mayor} tiene: {edad_mayor} años')
 
+
+num = float(input('Ingrese un número: '))
+otro_num = float(input('Ingrese otro número: '))
+
+suma = num + otro_num
+print(suma)
