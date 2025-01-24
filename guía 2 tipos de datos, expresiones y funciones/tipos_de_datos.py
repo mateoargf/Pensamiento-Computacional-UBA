@@ -115,3 +115,37 @@ print(palabra[:3])
 print(palabra[3:])
 print(palabra[0:10:2])
 print(palabra[::3])
+
+# Enteros:
+#     -sumar
+#     -restar
+#     -multiplicar
+#     -dividir
+    
+x = 10.6
+y = 5.6
+
+resta = x - y 
+
+print(resta, type(resta))
+
+multi = x * y
+print(multi, type(multi))
+
+div = x / y
+print(div, type(div))
+
+nombre = 'Pensamiento'
+apellido = 'Computacional'
+
+# Conocer el largo de un string
+largo_nombre = len(nombre)
+print(largo_nombre)
+
+# Concatenar 2 strings
+nombre_materia = nombre + ' ' + apellido
+print(nombre_materia)
+
+# Cortar un string
+nombre_corto = nombre[:5:]
+print(nombre_corto)
