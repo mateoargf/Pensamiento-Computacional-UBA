@@ -6,3 +6,19 @@
 # ● el resto
 # Más adelante podríamos crear nuestra propia calculadora :)
 
+# Recibe dos enteros y ejecuta las operaciones matemáticas: +,-,*,/,//,%
+def calcular(a,b):
+     sum = a + b
+     rest = a - b
+     mult = a * b
+     div_decimal = a / b
+     div_entero = a // b
+     resto = a % b
+     return (f'la suma: {sum}, resta: {rest}, multiplicación: {mult}, división decimal: {div_decimal}, división entera: {div_entero}, resto: {resto}')
+
+num1 = int(input('ingrese un entero: '))
+num2 = int(input('ingrese otro entero: '))
+
+resultados = calcular(num1, num2)
+
+print(resultados)
