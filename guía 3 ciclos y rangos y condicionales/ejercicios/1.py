@@ -1,6 +1,7 @@
 # 1. Escribir la expresión para saber si un número es más grande que otro. Guardarla en una variable de tipo
 # bool e imprimirla por pantalla para ver su valor.
 
+# Recibe dos parámetros y devuelve/retorna el mayor
 def validar_mayor(a,b):
      if a >= b:
           return a
