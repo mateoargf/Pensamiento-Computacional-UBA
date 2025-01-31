@@ -29,47 +29,27 @@ print(saludo)
 # print(num1,op,num2,'=',result,sep='')
 
 # Función Definición Ejemplo de Uso
-# print() Imprime un mensaje o valor en la consola print("Hello, world!")
-# input() Lee una entrada de texto desde el usuario name = input("Enter your name: ")
-# abs() Devuelve el valor absoluto de un número abs(-5)
-# round() Redondea un número al entero más cercano round(3.7)
-# 19
+
+print() #Imprime un mensaje o valor en la consola print("Hello, world!")
+input() #Lee una entrada de texto desde el usuario name = input("Enter your name: ")
+abs() #Devuelve el valor absoluto de un número abs(-5)
+round() #Redondea un número al entero más cercano round(3.7)
+
 # Sentencias básicas y datos simples APUNTE DE CÁTEDRA
-# int() Convierte un valor en un entero x = int("5")
-# float()
-# Convierte un valor en un número de punto
-# flotante
-# y = float("3.14")
-# str() Convierte un valor en una cadena de texto message = str(42)
-# bool() Convierte un valor en un booleano is_valid = bool(1)
-# len()
-# Devuelve la longitud (número de elementos)
-# de un objeto
-# length = len("Hello")
-# max()
-# Devuelve el valor máximo entre varios
-# elementos o una secuencia
-# max(4, 9, 2)
-# min()
-# Devuelve el valor mínimo entre varios
-# elementos o una secuencia
-# min(4, 9, 2)
-# pow() Calcula la potencia de un número result = pow(2, 3)
-# range() Genera una secuencia de números numbers = range(1, 5)
-# type() Devuelve el tipo de un objeto data_type = type("Hello")
-# round()
-# Redondea un número a un número de
-# decimales específico
-# rounded_num = round(3.14159, 2)
-# isinstance()
-# Verifica si un objeto es una instancia de una
-# clase específica
-# is_instance = isinstance(5, int)
-# replace()
-# Reemplaza todas las apariciones de un
-# substring por otro
-# text = "Hello, World!"
-# new_text = text.replace("Hello", "Hi")
+
+int() #Convierte un valor en un entero x = int("5")
+float() #Convierte un valor en un número de punto flotante y = float("3.14")
+str() #Convierte un valor en una cadena de texto message = str(42)
+bool() #Convierte un valor en un booleano is_valid = bool(1)
+len() #Devuelve la longitud (número de elementos) de un objeto length = len("Hello")
+max() #Devuelve el valor máximo entre varios elementos o una secuencia max(4, 9, 2)
+min() #Devuelve el valor mínimo entre varios elementos o una secuencia min(4, 9, 2)
+pow() #Calcula la potencia de un número result = pow(2, 3)
+range() #Genera una secuencia de números numbers = range(1, 5)
+type() #Devuelve el tipo de un objeto data_type = type("Hello")
+round() #Redondea un número a un número de decimales específico rounded_num = round(3.14159, 2)
+isinstance() #Verifica si un objeto es una instancia de una clase específica is_instance = isinstance(5, int)
+replace() #Reemplaza todas las apariciones de un substring por otro text = "Hello, World!" new_text = text.replace("Hello", "Hi")
 
 # Recibe el nombre de una persona y la saluda
 # def saludar(name):
