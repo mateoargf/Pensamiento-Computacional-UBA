@@ -10,4 +10,15 @@
 # > 5
 
 # Recibe un parámetro donde representa el cobro
+def cobrar(total):
+     while total > 0:
+          print(f'El importe a pagar es de {total} pesos. Por favor, ingrese un monto')   
+          monto = int(input('Su monto: '))
+          total -= monto
+     return '¡Operación exitosa!'
 
+total = int(input('Ingrese el total a cobrar: '))
+
+operacion = cobrar(total)          
+
+print(operacion)
