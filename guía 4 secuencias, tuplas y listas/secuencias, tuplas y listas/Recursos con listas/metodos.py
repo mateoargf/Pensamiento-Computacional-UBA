@@ -84,3 +84,42 @@ for n in new_list:
      print(n)
 
 # Filter(): -> filter(función,secuencia)
+
+def empieza_con_m(palabra):
+     return palabra[0] == 'm'
+
+lista = ["manzana", "balde", "molde", "marrón", "carro", "pera"]
+print("Lista: ")
+
+for i in lista:
+     print(i)
+
+print()
+
+nueva_lista= list(filter(empieza_con_m,lista))
+print('Nueva lista: ')
+for n in nueva_lista:
+     print(n)
+   
+# Obtenemos lista con los cuadrados y los num pares 
+def cuadrado(x):
+     return x ** 2
+
+def par(x):
+     if x%2==0:
+          return True
+     else:
+          return False
+     
+lista=[1,2,3,4,5,6]
+
+print('Lista Original')
+print(lista)
+
+lis = list(map(cuadrado,lista))
+print('Lista de cuadrados')
+print(lis)
+
+filtro= list(filter(par,lista))
+print('Lista de pares:')
+print(filtro)
