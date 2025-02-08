@@ -13,14 +13,37 @@ nombres= ['Martin', 'Mateo', 'Jose', 'Julian', 'Manuel']
 
 # Recibe un parámetro y elimina el último de la lista para sustituirlo por otro nombre
 def cambiar_ultimo(nombres):
-     ultimo= len(nombres) -1
-     nombres.pop(ultimo)
-     nombres.append(input('Agregar nuevo nombre: '))
+     cont = 0
+     for i in nombres:
+          cont += 1
+     nombres.pop(cont -1)
+     nombres.append('Juan')
      return nombres
 
+def mostrar_nombres(nombres):
+     cont= 0
+     for i in nombres:
+          cont += 1
+     encontrado = cont -3
+     return nombres[encontrado]
+
+def imprimir_nombres(nombres):
+     for i in nombres:
+          print(f'nombre: {i}')
+
+def imprimir_b(nombre):
+     print(nombre)
 print(f'La lista anterior: {nombres}')
          
 nueva_lista= cambiar_ultimo(nombres)
 
+nombre_dos_posiciones= mostrar_nombres(nombres)
+
+imprimir_nombres(nombres)
+print('forma b de imprimir:')
+otra_lista= list(map(imprimir_b, nombres))
 
 print(f'La lista actual: {nueva_lista}')
+print(f'mostar nombre a dos posiciones del final: {nombre_dos_posiciones}')
+
+print(f'3 impresiones: {nombres * 3}')
