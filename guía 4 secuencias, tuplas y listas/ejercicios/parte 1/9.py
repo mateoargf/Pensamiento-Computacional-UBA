@@ -21,6 +21,6 @@ def ver_stock(libreria):
                       
           
   
-libros = ["Cien años de soledad", "Drácula", "Don Quijote de la Mancha", "Moby-Dick", "1984", "Orgullo y prejuicio", "Crimen y castigo", "El retrato de Dorian Gray", "Los miserables", "Fahrenheit 451", "Don Quijote de la Mancha", "Moby-Dick", "1984", "Moby-Dick", "1984", ]
+libros = ["Cien años de soledad", "Drácula", "Don Quijote de la Mancha", "Moby-Dick", "1984", "Orgullo y prejuicio", "Crimen y castigo", "El retrato de Dorian Gray", "Los miserables", "Fahrenheit 451", "Don Quijote de la Mancha", "Moby-Dick", "1984", "Moby-Dick", "1984"]
 
 ver_stock(libros)
