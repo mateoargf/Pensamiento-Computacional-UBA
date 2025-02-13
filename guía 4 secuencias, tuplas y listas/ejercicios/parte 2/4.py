@@ -8,17 +8,20 @@
 
 # Recibe un parámetro y recibe nuevos ingredientes en la lista de str
 def agregar_ingredientes(lista):
-     ingresar = str(input('Ingrese su nuevo ingrediente y "X" para salir: '))
-     while not(ingresar in lista):
-          if ingresar in lista:
+     ingresar =''
+     while ingresar != 'X':
+          ingresar = str(input('Ingrese su nuevo ingrediente, "X" si desea salir: '))
+          
+          if ingresar == 'X':
                break
+          elif ingresar in lista:
+               ingresar = str(input('ingrese un producto que no esté en la lista, "X" si desea salir: '))
+               if ingresar == 'X':
+                    break
           else:
                lista.append(ingresar)
-          ingresar = str(input('Ingrese su nuevo ingrediente y "X" para salir: '))
-     return lista
+     return(print(f'Lista actual: {lista}'))
 
 ingredientes = ['tomate', 'queso', 'cebolla', 'huevo', 'orégano']
 
-nueva_lista = agregar_ingredientes(ingredientes)
-
-print(nueva_lista)
+agregar_ingredientes(ingredientes)
