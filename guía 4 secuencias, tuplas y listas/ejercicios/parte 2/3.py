@@ -5,14 +5,16 @@
 # Una vez llamada a la función el string nos debería quedar “Campeones del Mundo - ”, notar que solo borra el año, el espacio no
 
 # Recibe dos parámetrso tipo str(str, substr), devuelve solo el str
-def devolver_string(texto, subtexto):
-     subtexto = ''
-     return texto.format(sub= subtexto)
+def eliminar_substring(texto, subtexto):
+     subtexto = subtexto.capitalize()
+     if not (subtexto in texto):
+          return texto
+     else: return texto.replace(subtexto, '')
      
-texto_principal = 'Campeones del Mundo - {sub}'
-sub_texto = '2022'
+frase = 'Pensamiento Computacional - 2025'
+palabra = 'computacional'
 
-print(f'String: {texto_principal.format(sub=sub_texto)} - Substring: {sub_texto}')
+print(f'String: {frase} - Substring: {palabra}.')
 
-respuesta = devolver_string(texto_principal,sub_texto)
+respuesta = eliminar_substring(frase,palabra)
 print(f'String: {respuesta}.')
