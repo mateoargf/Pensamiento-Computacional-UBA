@@ -6,16 +6,14 @@
 
 # Recibe una tupla y un nombre, devuelve la nueva tupla sin el nombre del parámetro
 def eliminar_invitado(tupla, nombre):
-     nueva_tupla = ()
-     if nombre in tupla:
-          nueva_tupla += tupla      
-     return nueva_tupla
+    respuesta =  tuple(i for i in tupla if i != nombre)
+    return respuesta
 
 invitados_1 = ("Ana", "Carlos", "Elena", "Javier", "Mariana")  
 invitados_2 = ("Roberto", "Lucía", "Fernando", "Sofía", "Daniel")
 
-tupla = eliminar_invitado(invitados_1, "Carlos")
-tupla = eliminar_invitado(invitados_2, "Carlos")
-tupla = eliminar_invitado(invitados_2, "Lucía")
+tupla1 = eliminar_invitado(invitados_1, "Carlos")
+tupla2 = eliminar_invitado(invitados_2, "Lucía")
 
-print(tupla)
+print(tupla1)
+print(tupla2)
