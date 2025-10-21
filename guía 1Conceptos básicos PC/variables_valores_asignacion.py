@@ -22,5 +22,7 @@
 print('Hola alumnos de pensamiento computacional!')
 
 anio_anterior = 2024
+palabra='pensamiento'
 
 print('Estamos en el año: ', anio_anterior + 1)
+print('rango palabras: pensatimento = ', palabra[0:0:3])

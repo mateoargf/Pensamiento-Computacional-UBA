@@ -11,6 +11,7 @@
 
 nombres= ['Martin', 'Mateo', 'Jose', 'Julian', 'Manuel']
 
+<<<<<<< HEAD
 # Recibe un parámetro y elimina el último de la lista para sustituirlo por otro nombre
 def cambiar_ultimo(nombres):
      cont = 0
@@ -47,3 +48,7 @@ print(f'La lista actual: {nueva_lista}')
 print(f'mostar nombre a dos posiciones del final: {nombre_dos_posiciones}')
 
 print(f'3 impresiones: {nombres * 3}')
+=======
+
+
+>>>>>>> e1943fd (Guardar todos los cambios locales)
