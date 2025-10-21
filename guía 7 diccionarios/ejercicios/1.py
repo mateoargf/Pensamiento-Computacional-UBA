@@ -23,9 +23,16 @@ def guardar_alumnos(listado, dni, edad, nombre_completo, curso, division, orient
    alumnos.append(alumno_nuevo)
    
 def buscar_mayor(listado):
-   mayor = max(d["edad"] for d in listado)
-   alumno = listado.index(mayor)   
-   print(f'El alumno de mayor edad es: {alumno}')
+      mayor_edad = -1
+      alumno_mayor = None
+      
+      for alumno in listado:
+         if alumno['edad'] > mayor_edad:
+            alumno_mayor = alumno
+            mayor_edad = alumno['edad']
+      print(f'El alumno de mayor edad es: {alumno_mayor}')      
+      return alumno_mayor
+            
    
    
 alumnos = []
