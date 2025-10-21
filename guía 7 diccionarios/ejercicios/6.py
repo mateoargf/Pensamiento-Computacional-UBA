@@ -9,3 +9,21 @@
 # cantidad de elementos que quedaron en el diccionario.
 # Dado que la tupla es inmutable y nosotros no podemos ir agregando elementos a una tupla, ¿En qué
 # momento deberíamos crear la tupla?
+
+def renovar_lista(listado):
+   for d in listado:
+      if d['calidad'] == False:
+         listado.remove(d)
+         
+   return tuple(listado)
+
+productos = [
+    {"codigo": "A001", "vencimiento": 2025, "calidad": True},
+    {"codigo": "A002", "vencimiento": 2025, "calidad": False},
+    {"codigo": "A003", "vencimiento": 2026, "calidad": True},
+    {"codigo": "A004", "vencimiento": 2025, "calidad": False},
+    {"codigo": "A005", "vencimiento": 2026, "calidad": True},
+    {"codigo": "A006", "vencimiento": 2025, "calidad": False},
+]
+
+print(renovar_lista(productos))
