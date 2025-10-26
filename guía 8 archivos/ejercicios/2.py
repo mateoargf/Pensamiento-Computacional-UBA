@@ -12,3 +12,30 @@
 # La función tiene que devolver 5000
 # c. Tomi sabe que si participa Santi, también participa Tomi. Se pide que si Santi está en el archivo
 # de los nombres, se agregue también a Tomi.
+
+personas = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\regalo.txt', encoding='utf-8')
+lista = personas.readlines()
+for i in lista:
+   i.strip('\n')
+   print(i) 
+personas.close()
+
+personas = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\regalo.txt', encoding='utf-8')
+lista = personas.readlines()
+def calcular_total(nombres):
+   count = 0
+   aporte = 1000
+
+   for i in nombres:
+      if i.strip('\n') == 'Santi':
+         sumar = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\regalo.txt', 'a' ,encoding='utf-8')
+         sumar.writelines('\nTomi')
+         count +=1
+      count +=1
+   total = count *  aporte  
+   return total
+   
+valor = calcular_total(lista)
+print(f'El monto del regalo es de {valor}$')
+
+personas.close()
