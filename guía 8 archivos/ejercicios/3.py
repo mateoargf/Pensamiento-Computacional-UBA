@@ -14,3 +14,25 @@
 # Papa
 # Pollo
 # Fideos
+compras = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', 'w', encoding='utf-8')
+compras.close()
+
+def agregar_prod(prod):
+   lista = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', 'a', encoding='utf-8')
+   if prod.upper() != 'X':
+      lista.writelines(prod)
+   lista.close()
+
+rta = input('¿Qué agrego a la lista de compras?')
+
+while(rta.upper() != 'X'):
+   rta = input('¿Qué agrego a la lista de compras?')
+   agregar_prod(rta)
+
+compras = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', encoding='utf-8')
+
+for i in compras:
+   
+   print(i)
+   
+compras.close()
