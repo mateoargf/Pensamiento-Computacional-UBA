@@ -17,10 +17,13 @@
 compras = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', 'w', encoding='utf-8')
 compras.close()
 
+lista_super =[]
+
 def agregar_prod(prod):
    lista = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', 'a', encoding='utf-8')
    if prod.upper() != 'X':
-      lista.writelines(prod)
+      lista.writelines(f'{prod}\n')
+      lista_super.append(prod)
    lista.close()
 
 rta = input('¿Qué agrego a la lista de compras?')
@@ -29,10 +32,5 @@ while(rta.upper() != 'X'):
    rta = input('¿Qué agrego a la lista de compras?')
    agregar_prod(rta)
 
-compras = open('\\Users\\mgfleytas\\Pensamiento-Computacional-UBA\\guía 8 archivos\\ejercicios\\compras.txt', encoding='utf-8')
-
-for i in compras:
-   
+for i in lista_super:
    print(i)
-   
-compras.close()
