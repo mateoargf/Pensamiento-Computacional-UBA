@@ -34,4 +34,21 @@ for linea in lineas[1:]:
    print(f'stock producto: {stock}')
    print()
    
+def agregar_producto(diccionario, archivo_csv='guía 8 archivos\\ejercicios\\libreria_stock.csv'):
+   archivo = open(archivo_csv, 'a', encoding='utf-8')
+
+   linea = f'{diccionario['nombre']};{diccionario['código']};{diccionario['precio']};{diccionario['stock']}\n'
    
+   archivo.write(linea)
+   
+   archivo.close()
+   
+nuevo_producto = {
+    "nombre": "hojas A4",
+    "código": 35662,
+    "precio": 600,
+    "stock": 45
+}
+
+agregar_producto(nuevo_producto)
+print('producto creado con éxito')
