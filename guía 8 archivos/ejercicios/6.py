@@ -25,5 +25,18 @@ def guardar_notas(lista_alumnos, notas_csv='guía 8 archivos\\ejercicios\\notas.
    
    archivo.close()
    
+def calcular_aprobados(notas_csv='guía 8 archivos\\ejercicios\\notas.csv'):
+   cont = 0
+   archivo = open(notas_csv, encoding='utf-8')
+   for linea in archivo:
+      campos = linea.strip('\n').split(';')
+      nota = float(campos[3])
+      if nota > 4:
+         cont +=1
+   archivo.close()
+   print(f'El total de alumnos aprobados es: {cont}')
+   return cont
+
 guardar_notas(notas_alumnos)
-print('Notas guardadas')
+
+calcular_aprobados()
